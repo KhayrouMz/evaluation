@@ -375,7 +375,8 @@ textarea:-webkit-autofill:focus {
     border: 1px solid var(--text-color);
     -webkit-text-fill-color: black;
     -webkit-box-shadow: 0 0 0px 1000px #e8e8e8 inset;
-    transition: background-color 5000s ease-in-out 0s; }
+    transition: background-color 5000s ease-in-out 0s; 
+}
 /*------------------------------------- Footer ---------------------------------------------------------------------*/
 footer{
     position: relative;
