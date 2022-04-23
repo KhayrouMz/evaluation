@@ -293,11 +293,10 @@ body.dark .switch:before{
 
 /*------------------------------------- contact ---------------------------------------------------------------------*/
 .contact-us {
-    border: solid 1px var(--text-color);
     border-radius: 5px;
     padding: 50px 100px;
-    border-top: 10px solid var(--text-color);
     transition: var(--tran-05);
+    width: 100% ;
 }
 
 label, input, textarea {
@@ -351,6 +350,8 @@ font-size: 8pt;
     transition: .2s all ease-in-out;
     border-bottom: 2px solid transparent;
     outline: none; 
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .contact-us button:hover {
     background: inherit;

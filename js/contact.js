@@ -3,14 +3,6 @@ const body = document.querySelector("body");
         sideBar = body.querySelector("nav");
         sideBarToggel = body.querySelector(".sidebar-toggel");
 
-    
-    // let getMode = localStorage.setItem("mode");
-
-    // if ( getMode && getMode === "dark") {
-
-    //     body.classList.toggle("dark");
-    // }
-
     modeToggle.onclick = function () {
         body.classList.toggle("dark");
         if (body.classList.contains("dark")){
@@ -19,6 +11,17 @@ const body = document.querySelector("body");
             localStorage.setItem("mode", "light");
         }
     }
+
+function darkModeToggle(){
+    let mode = localStorage.setItem('mode');
+
+    if ( mode === 'dark') {
+
+        body.classList.toggle('dark');
+
+    }
+    darkModeToggle()
+}
 
     sideBarToggel.onclick = function () {
         sideBar.classList.toggle("close");
@@ -35,31 +38,26 @@ html += `
 <div class="contact-us">
     <form action="#">
         <label for="customerName">
-        NAME 
+        Votre nom :
         <em>&#x2a;</em>
         </label><input id="customerName" name="customerName" required="" type="text" />
         <label for="customerEmail">
-        EMAIL 
+        Votre mail : 
         <em>&#x2a;</em>
         </label><input id="customerEmail" name="customerEmail" required="" type="email" />
-        <label for="customerPhone">PHONE</label>
+        <label for="customerPhone">Votre numéro de téléphone :</label>
         <input id="customerPhone" name="customerPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" type="tel" />
         <label for="customerNote">
-        YOUR MESSAGE 
+        Votre commentaire : 
         <em>&#x2a;</em>
         </label>
         <textarea id="customerNote" name="customerNote" required="" rows="4">
-    </textarea>
-        <h3>Please provide all the information about your issue you can.</h3>
-        <label for="spamProtection">
-        SPAM PROTECTION 
-        <em>&#x2a; </em>
-        <span>&nbsp;&nbsp;&nbsp;&nbsp;What day comes before July 11th?</span>
-        </label><input id="spamProtection" name="spamProtection" type="text" />
+        </textarea>
         <button id="customerOrder">SUBMIT
         </button>
     </form>
 </div>
+<div class="reponse"></div>
 `
 
 document.querySelector(".contact").innerHTML = html;
