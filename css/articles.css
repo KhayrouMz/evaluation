@@ -234,8 +234,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    border:solid 1px var(--text-color);
-    box-shadow: 2px 2px var(--text-color);
+    border:solid 1px var(--border-color);
 }
 .dashboard .search-box .button i{
     color: var(--text-color);
@@ -247,13 +246,12 @@ justify-content: flex-start;
 align-items: center;
 }
 .dashboard input{
-    width: 300px;
+    width: 30rem;
     height: 40px;
     padding-left: 20px;
     background-color: var(--panel-color);
     transition: var(--tran-05);
-    border:solid 1px var(--text-color);
-    box-shadow: 2px 2px var(--text-color);
+    border:solid 1px var(--border-color);
 }
 .dashboard input::placeholder {
     color: var(--text-color);
@@ -297,13 +295,8 @@ body.dark .switch:before{
 /*------------------------------------- Articles-Informatiques ---------------------------------------------------------------------*/
 .articles-informatique{
     position: relative;
-    /* left: 125px; */
     width: calc(100% - 250px);
-    /* top: 16vh; */
-    background-color: var(--panel-color);
     transition: var(--tran-05);
-    /* padding: 10px 15px; */
-    /* height: 60vh; */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -311,7 +304,7 @@ body.dark .switch:before{
 }
 .articles-informatique .titre{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 .articles-informatique .titre .text{
@@ -336,63 +329,75 @@ body.dark .switch:before{
 
 .articles-informatique .boxes{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 20px;
     width: calc(100% + 20px);
 }
-
-.articles-informatique .boxes .box{
-    transition: var(--tran-05);
-    width: 30%;
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    border-radius: 0px;
-    box-shadow: 0px 0px 1px 1px var(--text-color);
-    border-radius: 10px;
-    margin-bottom: 10px;
+.grid__item {
+    background-color: #fff;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, .1);
+    cursor: pointer;
+    transition: var(--tran-03);
+    width: 20rem;
 }
-
-.articles-informatique .boxes .box .titre{
-    font-size: 24px;
-    margin-top: 10px;
-    margin: 10px;
+.grid__item:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, .2);
+}
+.card__img {
+    display: block;
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+}
+.card__content {
+    padding: 1rem 1rem;
+}
+.card__header {
+    font-size: 1.5rem;
     font-weight: 500;
-    color: var(--text-color);
-    transition: var(--tran-05);
+    color: #0d0d0d;
+    margin-bottom: 1rem;
 }
-.articles-informatique .boxes .box .text{
-    font-size: 18px;
-    margin: 10px;
-    color: var(--text-color);
-    transition: var(--tran-05);
+.card__text {
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    line-height: 1;
     text-align: justify;
+    color: #3d3d3d;
+    margin-bottom: 1rem;
 }
-
-.articles-informatique .boxes .box .btn{
-    width: 70%;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    background-color: var(--Btn-color);
-    font-size: 14px;
-    color: var(--panel-color);
-    transition: var(--tran-05);
-    box-shadow: 0 0;
-    border-radius: 5px;
+.card__btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #3363ff;
+    background-color: #e6ecff;
+    border: none;
+    border-radius: 0.4rem;
+    transition: var(--tran-03);
+    cursor: pointer;
+}
+.card__btn span {
+    margin-left: 0.8rem;
+    transition: var(--tran-03);
+}
+.card__btn:hover, .card__btn:active {
+    background-color: #dce4ff;
+}
+.card__btn:hover span, .card__btn:active span {
+    margin-left: 0.8rem;
 }
 /*------------------------------------- Articles-téléphonie ---------------------------------------------------------------------*/
 .articles-téléphonie{
     position: relative;
-    /* left: 125px; */
     width: calc(100% - 250px);
-    /* top: 30vh; */
-    background-color: var(--panel-color);
     transition: var(--tran-05);
-    /* padding: 10px 15px; */
-    /* height: 60vh; */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -400,7 +405,7 @@ body.dark .switch:before{
 }
 .articles-téléphonie .titre{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 .articles-téléphonie .titre .text{
@@ -422,74 +427,86 @@ body.dark .switch:before{
     transition: var(--tran-05);
     border-radius: 5px;
 }
-
 .articles-téléphonie .boxes1{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
     margin-top: 20px;
     width: calc(100% + 20px);
 }
-
-.articles-téléphonie .boxes1 .box{
-    transition: var(--tran-05);
-    width: 30%;
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    border-radius: 0px;
-    box-shadow: 0px 0px 1px 1px var(--text-color);
-    border-radius: 10px;
-    margin-bottom: 10px;
+.grid__item {
+    background-color: #fff;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, .1);
+    cursor: pointer;
+    transition: var(--tran-03);
+    width: 20rem;
+    margin-bottom: 1rem;
 }
-
-.articles-téléphonie .boxes1 .box .titre{
-    font-size: 24px;
-    margin-top: 10px;
-    margin: 10px;
+.grid__item:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, .2);
+}
+.card__img {
+    display: block;
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+}
+.card__content {
+    padding: 1rem 1rem;
+}
+.card__header {
+    font-size: 1.5rem;
     font-weight: 500;
-    color: var(--text-color);
-    transition: var(--tran-05);
+    color: #0d0d0d;
+    margin-bottom: 1rem;
 }
-.articles-téléphonie .boxes1 .box .text{
-    font-size: 18px;
-    margin: 10px;
-    color: var(--text-color);
-    transition: var(--tran-05);
+.card__text {
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    line-height: 1;
     text-align: justify;
+    color: #3d3d3d;
+    margin-bottom: 1rem;
 }
-
-.articles-téléphonie .boxes1 .box .btn{
-    width: 70%;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    background-color: var(--Btn-color);
-    font-size: 14px;
-    color: var(--panel-color);
-    transition: var(--tran-05);
-    box-shadow: 0 0;
-    border-radius: 5px;
+.card__btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #3363ff;
+    background-color: #e6ecff;
+    border: none;
+    border-radius: 0.4rem;
+    transition: var(--tran-03);
+    cursor: pointer;
+}
+.card__btn span {
+    margin-left: 0.8rem;
+    transition: var(--tran-03);
+}
+.card__btn:hover, .card__btn:active {
+    background-color: #dce4ff;
+}
+.card__btn:hover span, .card__btn:active span {
+    margin-left: 0.8rem;
 }
 /*------------------------------------- Footer ---------------------------------------------------------------------*/
 footer{
     position: relative;
-    /* top: 35vh; */
     left: 250px;
     background-color: var(--panel-color);
     transition: var(--tran-05);
-    /* height: 60vh; */
     width: calc(100% - 250px);
     background-color: #0e0e0e;
     color: white;
     display: flex;
     flex-direction: column;
-    /* margin: 0 auto; */
 }
 .container1{
-    /* position: relative; */
     background-color: var(--panel-color);
     transition: var(--tran-05);
     height: 40vh;
@@ -636,19 +653,5 @@ footer .mensions-légals a{
         display: flex;
         flex-wrap: wrap;
         justify-content:space-around;
-    }
-}
-
-@media (max-width : 500px) {
-    .articles-informatique .boxes{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .articles-informatique .boxes .box{
-        width: calc(70%);
-        margin-bottom: 20px;
-
     }
 }

@@ -46,13 +46,17 @@ let html ='';
 
 for (i=0;i<articles.length;i++){
 html += `
-<div class="box">
-
-    <span class="titre">${articles[i].titre}</span>
-    <img src="${articles[i].photo}" alt="" loading="lazy">
-    <p class="text"> ${articles[i].contenu} </p>
-    <button class="btn" type="button">${articles[i].info}</button>
-
+<div class="grid">
+        <div class="grid__item">
+            <div class="card"><img class="card__img" src="${articles[i].photo}" >
+                <div class="card__content">
+                    <h1 class="card__header">${articles[i].titre}</h1>
+                    <p class="card__text">${articles[i].contenu} </p>
+                    <button class="card__btn">${articles[i].info} <span> + </span></button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 `
 }
@@ -66,16 +70,19 @@ document.querySelector(".boxes").innerHTML = html;
 
 let html1 ='';
 
-for (i=0;i<articles.length;i++){
+for (i=0;i<articles1.length;i++){
 html1 += `
-<div class="box">
-
-    
-    <span class="titre">${articles1[i].titre}</span>
-    <img src="${articles1[i].photo}" alt="" loading="lazy"> 
-    <p class="text"> ${articles1[i].contenu} </p>
-    <button class="btn" type="button">${articles[i].info}</button>
-
+<div class="grid">
+        <div class="grid__item">
+            <div class="card"><img class="card__img" src="${articles1[i].photo}" >
+                <div class="card__content">
+                    <h1 class="card__header">${articles1[i].titre}</h1>
+                    <p class="card__text">${articles1[i].contenu} </p>
+                    <button class="card__btn">${articles1[i].info} <span> + </span></button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 `
 }
