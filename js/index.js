@@ -1,14 +1,20 @@
 const articles = [
     {titre : "Article 1", id: 1, contenu : "Lorem ipsum dolor sit amet consectetur adipisicing elit.", photo : "https://source.unsplash.com/random/200x150", info : "Ajouter l'article au panier"},
     {titre : "Article 2", id: 2, contenu : "Lorem ipsum dolor sit amet consectetur adipisicing elit.", photo : "https://source.unsplash.com/random/200x151", info : "Ajouter l'article au panier"},
-    {titre : "Article 3", id: 3, contenu : "Lorem ipsum dolor sit amet consectetur adipisicing elit.", photo : "https://source.unsplash.com/random/200x152", info : "Ajouter l'article au panier"}
+    {titre : "Article 3", id: 3, contenu : "Lorem ipsum dolor sit amet consectetur adipisicing elit.", photo : "https://source.unsplash.com/random/200x152", info : "Ajouter l'article au panier"},
+    {titre : "Article 4", id: 4, contenu : "Lorem ipsum dolor sit amet consectetur adipisicing elit.", photo : "https://source.unsplash.com/random/200x150", info : "Ajouter l'article au panier"},
+    {titre : "Article 5", id: 5, contenu : "Lorem ipsum dolor sit amet consectetur adipisicing elit.", photo : "https://source.unsplash.com/random/200x151", info : "Ajouter l'article au panier"},
+    {titre : "Article 6", id: 6, contenu : "Lorem ipsum dolor sit amet consectetur adipisicing elit.", photo : "https://source.unsplash.com/random/200x152", info : "Ajouter l'article au panier"}
 ]
 
 
 const articles1 = [
     {titre : "Article 1", id: 1, contenu : "Lorem ipsum dolor sit amet consectetur adipisicing elit.", photo : "https://source.unsplash.com/random/200x150", info : "Ajouter l'article au panier"},
     {titre : "Article 2", id: 2, contenu : "Lorem ipsum dolor sit amet consectetur adipisicing elit.", photo : "https://source.unsplash.com/random/200x151", info : "Ajouter l'article au panier"},
-    {titre : "Article 3", id: 3, contenu : "Lorem ipsum dolor sit amet consectetur adipisicing elit.", photo : "https://source.unsplash.com/random/200x152", info : "Ajouter l'article au panier"}
+    {titre : "Article 3", id: 3, contenu : "Lorem ipsum dolor sit amet consectetur adipisicing elit.", photo : "https://source.unsplash.com/random/200x152", info : "Ajouter l'article au panier"},
+    {titre : "Article 4", id: 4, contenu : "Lorem ipsum dolor sit amet consectetur adipisicing elit.", photo : "https://source.unsplash.com/random/200x150", info : "Ajouter l'article au panier"},
+    {titre : "Article 5", id: 5, contenu : "Lorem ipsum dolor sit amet consectetur adipisicing elit.", photo : "https://source.unsplash.com/random/200x151", info : "Ajouter l'article au panier"},
+    {titre : "Article 6", id: 6, contenu : "Lorem ipsum dolor sit amet consectetur adipisicing elit.", photo : "https://source.unsplash.com/random/200x152", info : "Ajouter l'article au panier"}
 ]
 
 const body = document.querySelector("body");
