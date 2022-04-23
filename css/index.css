@@ -269,7 +269,7 @@ align-items: center;
     background: url("/assets/asus3.jpg") no-repeat;
     object-fit: fill;
     background-size: cover;
-    background-position: center;
+    background-position: center; 
     position: relative;
     width: calc(112% - 250px);
     display: flex;

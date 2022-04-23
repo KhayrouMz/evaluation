@@ -654,3 +654,115 @@ footer .mensions-légals a{
         justify-content:space-around;
     }
 }
+
+.parent{
+    background: url("/assets/asuspc.gif") no-repeat;
+    object-fit: fill;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: calc(112% - 250px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 50vh;
+}
+.cont{
+    width: calc(112% - 250px);
+    display: flex;
+    justify-content: space-between;
+    height: 50vh;
+    border-radius: 2px;
+    margin: 0 auto;
+    margin: 20px 20px;
+}
+.cont .contex{
+    padding: 10px;
+    color: var(--text-color);
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-left: solid 1px white;
+    width: 30rem;
+    border: solid 1px;
+}
+.cont .contex button{
+    background-color: white;
+    border: solid 1px black;
+    width: 90%;
+    margin: 20px 0px;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    box-shadow: 2px 2px black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont .contex .titre{
+    font-size: 30px;
+}
+.cont .contex .text{
+    font-size: 20px;
+}
+
+.dashboard .pub{
+    background: url("/assets/ZealousIllGaur-max-1mb.gif") no-repeat;
+    background-size: cover;
+    object-fit: fill;
+    background-position: center;
+    position: relative;
+    width: calc(112% - 250px);
+    height: 55vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.dashboard .contex{
+    padding: 20px;
+    color: var(--text-color);
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-left: solid 1px white;
+    width: 30rem;
+    border-left: solid 1px var(--text-color);
+    border: solid 1px;
+}
+.dashboard .contex .titre{
+    font-size: 30px;
+    text-align: justify;
+}
+.dashboard .contex .text{
+    font-size: 20px;
+    text-align: justify;
+}
+.dashboard .contex button{
+    background-color: white;
+    border: solid 1px black;
+    width: 90%;
+    margin: 20px 0px;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    box-shadow: 2px 2px black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent2{
+    width: calc(112% - 250px);
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+}
