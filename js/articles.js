@@ -66,7 +66,7 @@ fetch("./assets/bd2.json")
 });
 
 
-    const htmlFooter = `
+const htmlFooter = `
 <div>
     <p class="text">
         ${(new Date()).getFullYear()} - &copy; - Khayreddine - IFOCOP - <a href="mentions.html">Mentions légales</a>

@@ -174,12 +174,12 @@ body{
     left: 250px;
     background-color: var(--panel-color);
     transition: var(--tran-05);
-    /* height: 250vh; */
+    height: 100vh;
     width: calc(100% - 250px);
     padding: 10px 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-top: 6vh;
 }
@@ -265,52 +265,6 @@ align-items: center;
     color: var(--text-color);
     transition: var(--tran-05);
 }
-.parent{
-    background: url("/assets/asus3.jpg") no-repeat;
-    object-fit: fill;
-    background-size: cover;
-    background-position: center; 
-    position: relative;
-    width: calc(112% - 250px);
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    height: 55vh;
-    border-radius: 2px;
-    margin: 0 auto;
-    margin: 20px 20px;
-}
-.parent .contex{
-    padding: 20px;
-    color: white;
-    height: 35vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    border-left: solid 1px white;
-    width: 30rem;
-}
-.parent .contex button{
-    background-color: white;
-    border: solid 1px white;
-    width: 80%;
-    margin: 20px 0px;
-    font-size: 20px;
-    font-weight: 500;
-    color: black;
-    box-shadow: 2px 2px white;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.parent .contex .titre{
-    font-size: 30px;
-}
-.parent .contex .text{
-    font-size: 20px;
-}
 .menu-items li a:hover i,
 .menu-items li a:hover .link-name
 {
@@ -337,261 +291,6 @@ body.dark{
 }
 body.dark .switch:before{
     left: 17px;
-}
-/*------------------------------------- Articles-Informatiques ---------------------------------------------------------------------*/
-.articles-informatique{
-    position: relative;
-    width: calc(100% - 250px);
-    background-color: var(--panel-color);
-    transition: var(--tran-05);
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-}
-.articles-informatique .titre{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 5rem;
-}
-.articles-informatique .titre .text{
-    font-size: 24px;
-    font-weight: 500;
-    color: var(--text-color);
-    transition: var(--tran-05);
-}
-.articles-informatique .titre i{
-    min-width: 45px;
-    margin-right: 10px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    color: var(--text-color);
-    border: solid 1px var(--text-color);
-    transition: var(--tran-05);
-    border-radius: 5px;
-}
-.articles-informatique .boxes{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 20px;
-    width: calc(100% + 20px);
-}
-.grid__item {
-    background-color: var(--panel-color);
-    border-radius: 0.4rem;
-    overflow: hidden;
-    box-shadow: 0 3rem 6rem rgba(0, 0, 0, .1);
-    cursor: pointer;
-    width: 20rem;
-    margin-bottom: 1rem;
-    transition: var(--tran-05);
-}
-.grid__item:hover {
-    transform: translateY(-0.5%);
-    box-shadow: 0 4rem 8rem rgba(0, 0, 0, .2);
-}
-.card__img {
-    display: block;
-    width: 100%;
-    height: 15rem;
-    object-fit: cover;
-}
-.card__content {
-    padding: 1rem 1rem;
-}
-.card__header {
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: #0d0d0d;
-    margin-bottom: 1rem;
-}
-.card__text {
-    font-size: 1.1rem;
-    letter-spacing: 0.1rem;
-    line-height: 1;
-    text-align: justify;
-    color: #3d3d3d;
-    margin-bottom: 1rem;
-}
-.card__btn {
-    display: block;
-    width: 100%;
-    padding: 1rem;
-    font-size: 1.1rem;
-    text-align: center;
-    color: #3363ff;
-    background-color: #e6ecff;
-    border: none;
-    border-radius: 0.4rem;
-    transition: var(--tran-03);
-    cursor: pointer;
-}
-.card__btn span {
-    margin-left: 0.8rem;
-    transition: var(--tran-03);
-}
-.card__btn:hover, .card__btn:active {
-    background-color: #dce4ff;
-}
-.card__btn:hover span, .card__btn:active span {
-    margin-left: 0.8rem;
-}
-/*------------------------------------- Articles-téléphonie ---------------------------------------------------------------------*/
-.articles-téléphonie{
-    position: relative;
-    width: calc(100% - 250px);
-    background-color: var(--panel-color);
-    transition: var(--tran-05);
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-}
-.articles-téléphonie .titre{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 5rem;
-}
-.articles-téléphonie .titre .text{
-    font-size: 24px;
-    font-weight: 500;
-    color: var(--text-color);
-    transition: var(--tran-05);
-}
-.articles-téléphonie .titre i{
-    min-width: 45px;
-    margin-right: 10px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    color: var(--text-color);
-    border: solid 1px var(--text-color);
-    transition: var(--tran-05);
-    border-radius: 5px;
-}
-
-.articles-téléphonie .boxes1{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    width: calc(100% + 20px);
-}
-
-.grid__item {
-    background-color: #fff;
-    border-radius: 0.4rem;
-    overflow: hidden;
-    box-shadow: 0 3rem 6rem rgba(0, 0, 0, .1);
-    cursor: pointer;
-    transition: var(--tran-03);
-    width: 20rem;
-    margin-bottom: 1rem;
-}
-.grid__item:hover {
-    transform: translateY(-0.5%);
-    box-shadow: 0 4rem 8rem rgba(0, 0, 0, .2);
-}
-.card__img {
-    display: block;
-    width: 100%;
-    height: 15rem;
-    object-fit: cover;
-}
-.card__content {
-    padding: 1rem 1rem;
-}
-.card__header {
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: #0d0d0d;
-    margin-bottom: 1rem;
-}
-.card__text {
-    font-size: 1.1rem;
-    letter-spacing: 0.1rem;
-    line-height: 1;
-    text-align: justify;
-    color: #3d3d3d;
-    margin-bottom: 1rem;
-}
-.card__btn {
-    display: block;
-    width: 100%;
-    padding: 1rem;
-    font-size: 1.1rem;
-    text-align: center;
-    color: #3363ff;
-    background-color: #e6ecff;
-    border: none;
-    border-radius: 0.4rem;
-    transition: var(--tran-03);
-    cursor: pointer;
-}
-.card__btn span {
-    margin-left: 0.8rem;
-    transition: var(--tran-03);
-}
-.card__btn:hover, .card__btn:active {
-    background-color: #dce4ff;
-}
-.card__btn:hover span, .card__btn:active span {
-    margin-left: 0.8rem;
-}
-
-/*------------------------------------- Pub ---------------------------------------------------------------------*/
-.dashboard .pub{
-    background: url("/assets/asus4.jpg") no-repeat;
-    background-size: cover;
-    object-fit: fill;
-    background-position: center;
-    position: relative;
-    width: calc(112% - 250px);
-    height: 55vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    border-radius: 3px;
-    margin: 0 auto;
-    margin: 20px 20px;
-}
-.dashboard .pub .contex{
-    padding: 20px;
-    color: white;
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    border-right: solid 1px white;
-    width: 25rem;
-}
-.dashboard .pub .contex .titre{
-    font-size: 30px;
-}
-.dashboard .pub .contex .text{
-    font-size: 20px;
-    text-align: justify;
-}
-.dashboard .pub .contex button{
-    background-color: white;
-    border: solid 1px white;
-    width: 80%;
-    margin: 20px 0px;
-    font-size: 20px;
-    font-weight: 500;
-    color: black;
-    box-shadow: 2px 2px white;
-    cursor: pointer;
 }
 /*------------------------------------- Footer ---------------------------------------------------------------------*/
 footer{
@@ -767,4 +466,65 @@ footer .mensions-légals a{
         margin-bottom: 20px;
 
     }
+}
+.dashboard .single .parent{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.dashboard .single .titre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.dashboard .single .parent .text{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    padding: 20px;
+    text-align: justify !important;
+    border-left: solid 1px var(--text-color);
+}
+.dashboard .single {
+    margin-top: 2rem;
+    width: 95%;
+    background-color: #fff;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, .1);
+    transition: var(--tran-03);
+    margin-bottom: 1rem;
+}
+.dashboard .single .parent img {
+    display: block;
+    width: 20rem;
+    height: 15rem;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.single button {
+    width: 30%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #3363ff;
+    background-color: #e6ecff;
+    border: none;
+    border-radius: 0.4rem;
+    transition: var(--tran-03);
+    cursor: pointer;
+    margin: 2rem;
+}
+.single button:hover, .single button:active {
+    background-color: #dce4ff;
+}
+.single button:hover span, .single button:active span {
+    margin-left: 0.8rem;
 }
