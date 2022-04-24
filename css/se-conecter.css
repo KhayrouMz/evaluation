@@ -8,9 +8,12 @@
 }
 
 :root{
+    --dashtop-color:#D8D3CD;
+    --card-color:#D8D3CD;
+    --navbar-color:#F4F9F9;
     --primary-color:#0E4BF1;
-    --panel-color:#FFF;
-    --text-color:#000;
+    --panel-color:#F4F9F9;
+    --text-color:#000000;
     --Btn-color:#000;
     --black-light-color:#707070;
     --border-color:#efefef;
