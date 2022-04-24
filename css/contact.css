@@ -226,7 +226,7 @@ body{
     height: 40px;
     cursor: pointer;
     border:solid 1px var(--text-color);
-    background-color: var(--panel-color);
+    background-color: var(--border-color);
     transition: var(--tran-05);
     position: relative;
     display: flex;
