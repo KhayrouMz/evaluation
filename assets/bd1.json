@@ -1,14 +1,14 @@
 [
-    {"titre" : "Article 1", "id": 1, "contenu" : "Lorem ipsum dolor sit amet consectetur adipisicing elit.", "photo" : "https://source.unsplash.com/random/200x150", "info" : "Savoir plus +"},
-    {"titre" : "Article 2", "id": 2, "contenu" : "Lorem ipsum dolor sit amet consectetur adipisicing elit.", "photo" : "https://source.unsplash.com/random/200x151", "info" : "Savoir plus +"},
-    {"titre" : "Article 3", "id": 3, "contenu" : "Lorem ipsum dolor sit amet consectetur adipisicing elit.", "photo" : "https://source.unsplash.com/random/200x152", "info" : "Savoir plus +"},
-    {"titre" : "Article 4", "id": 4, "contenu" : "Lorem ipsum dolor sit amet consectetur adipisicing elit.", "photo" : "https://source.unsplash.com/random/200x150", "info" : "Savoir plus +"},
-    {"titre" : "Article 5", "id": 5, "contenu" : "Lorem ipsum dolor sit amet consectetur adipisicing elit.", "photo" : "https://source.unsplash.com/random/200x151", "info" : "Savoir plus +"},
-    {"titre" : "Article 6", "id": 6, "contenu" : "Lorem ipsum dolor sit amet consectetur adipisicing elit.", "photo" : "https://source.unsplash.com/random/200x152", "info" : "Savoir plus +"},
-    {"titre" : "Article 7", "id": 7, "contenu" : "Lorem ipsum dolor sit amet consectetur adipisicing elit.", "photo" : "https://source.unsplash.com/random/200x150", "info" : "Savoir plus +"},
-    {"titre" : "Article 8", "id": 8, "contenu" : "Lorem ipsum dolor sit amet consectetur adipisicing elit.", "photo" : "https://source.unsplash.com/random/200x151", "info" : "Savoir plus +"},
-    {"titre" : "Article 9", "id": 9, "contenu" : "Lorem ipsum dolor sit amet consectetur adipisicing elit.", "photo" : "https://source.unsplash.com/random/200x152", "info" : "Savoir plus +"},
-    {"titre" : "Article 10", "id": 10, "contenu" : "Lorem ipsum dolor sit amet consectetur adipisicing elit.", "photo" : "https://source.unsplash.com/random/200x150", "info" : "Savoir plus +"},
-    {"titre" : "Article 11", "id": 11, "contenu" : "Lorem ipsum dolor sit amet consectetur adipisicing elit.", "photo" : "https://source.unsplash.com/random/200x151", "info" : "Savoir plus +"},
-    {"titre" : "Article 12", "id": 12, "contenu" : "Lorem ipsum dolor sit amet consectetur adipisicing elit.", "photo" : "https://source.unsplash.com/random/200x152", "info" : "Savoir plus +"}
+    {"titre" : "Article 1", "id": 1, "contenu" : "Lorem ipsum dolor sit amet consectetur adipisicing elit.", "photo" : "https://source.unsplash.com/random/200x150", "info" : "Savoir plus +","prix" : "220€"},
+    {"titre" : "Article 2", "id": 2, "contenu" : "Lorem ipsum dolor sit amet consectetur adipisicing elit.", "photo" : "https://source.unsplash.com/random/200x151", "info" : "Savoir plus +","prix" : "220€"},
+    {"titre" : "Article 3", "id": 3, "contenu" : "Lorem ipsum dolor sit amet consectetur adipisicing elit.", "photo" : "https://source.unsplash.com/random/200x152", "info" : "Savoir plus +","prix" : "220€"},
+    {"titre" : "Article 4", "id": 4, "contenu" : "Lorem ipsum dolor sit amet consectetur adipisicing elit.", "photo" : "https://source.unsplash.com/random/200x150", "info" : "Savoir plus +","prix" : "220€"},
+    {"titre" : "Article 5", "id": 5, "contenu" : "Lorem ipsum dolor sit amet consectetur adipisicing elit.", "photo" : "https://source.unsplash.com/random/200x151", "info" : "Savoir plus +","prix" : "220€"},
+    {"titre" : "Article 6", "id": 6, "contenu" : "Lorem ipsum dolor sit amet consectetur adipisicing elit.", "photo" : "https://source.unsplash.com/random/200x152", "info" : "Savoir plus +","prix" : "220€"},
+    {"titre" : "Article 7", "id": 7, "contenu" : "Lorem ipsum dolor sit amet consectetur adipisicing elit.", "photo" : "https://source.unsplash.com/random/200x150", "info" : "Savoir plus +","prix" : "220€"},
+    {"titre" : "Article 8", "id": 8, "contenu" : "Lorem ipsum dolor sit amet consectetur adipisicing elit.", "photo" : "https://source.unsplash.com/random/200x151", "info" : "Savoir plus +","prix" : "220€"},
+    {"titre" : "Article 9", "id": 9, "contenu" : "Lorem ipsum dolor sit amet consectetur adipisicing elit.", "photo" : "https://source.unsplash.com/random/200x152", "info" : "Savoir plus +","prix" : "220€"},
+    {"titre" : "Article 10", "id": 10, "contenu" : "Lorem ipsum dolor sit amet consectetur adipisicing elit.", "photo" : "https://source.unsplash.com/random/200x150", "info" : "Savoir plus +","prix" : "220€"},
+    {"titre" : "Article 11", "id": 11, "contenu" : "Lorem ipsum dolor sit amet consectetur adipisicing elit.", "photo" : "https://source.unsplash.com/random/200x151", "info" : "Savoir plus +","prix" : "220€"},
+    {"titre" : "Article 12", "id": 12, "contenu" : "Lorem ipsum dolor sit amet consectetur adipisicing elit.", "photo" : "https://source.unsplash.com/random/200x152", "info" : "Savoir plus +","prix" : "220€"}
 ]

@@ -42,8 +42,8 @@ fetch("./assets/bd1.json")
 
     const htmlSingle = `
     <div class="titre"><h2>${article.titre}</h2></div>
-    <div class="parent">
-        <img src="${article.photo}" alt="" loading="lazy">
+    <div class="contenu-prix">
+        <span class="prix">${article.prix}</span>
         <p class="text">${article.contenu}</p>
     </div>
     <button type="button">Ajouter l'article au panier</button>
@@ -64,7 +64,10 @@ fetch("./assets/bd2.json")
         <div class="titre"><h2>${article1.titre}</h2></div>
         <div class="parent">
             <img src="${article1.photo}" alt="" loading="lazy">
-            <p class="text">${article1.contenu}</p>
+            <div class="contenu-prix">
+                <span class="prix">${article1.prix}</span>
+                <p class="text">${article1.contenu}</p>
+            </div>
         </div>
         <button type="button">Ajouter l'article au panier</button>
     `

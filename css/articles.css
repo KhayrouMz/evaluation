@@ -311,6 +311,7 @@ body.dark .switch:before{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 .articles-informatique .titre .text{
     font-size: 24px;
@@ -409,6 +410,7 @@ body.dark .switch:before{
     margin-bottom: 20px;
 }
 .articles-téléphonie .titre{
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
