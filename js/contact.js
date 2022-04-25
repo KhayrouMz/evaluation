@@ -35,28 +35,28 @@ function darkModeToggle(){
 let html ='';
 
 html += `
-<div class="contact-us">
-    <form action="#">
-        <label for="customerName">
-        Votre nom :
-        <em>&#x2a;</em>
-        </label><input id="customerName" name="customerName" required="" type="text" />
-        <label for="customerEmail">
-        Votre mail : 
-        <em>&#x2a;</em>
-        </label><input id="customerEmail" name="customerEmail" required="" type="email" />
-        <label for="customerPhone">Votre numéro de téléphone :</label>
-        <input id="customerPhone" name="customerPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" type="tel" />
-        <label for="customerNote">
-        Votre commentaire : 
-        <em>&#x2a;</em>
-        </label>
-        <textarea id="customerNote" name="customerNote" required="" rows="4">
-        </textarea>
-        <button id="customerOrder">SUBMIT
-        </button>
-    </form>
-</div>
+
+<form class="contact-us" action="#">
+    <label for="customerName">
+    Votre nom :
+    <em>&#x2a;</em>
+    </label><input id="customerName" name="customerName" required="" type="text" />
+    <label for="customerEmail">
+    Votre mail : 
+    <em>&#x2a;</em>
+    </label><input id="customerEmail" name="customerEmail" required="" type="email" />
+    <label for="customerPhone">Votre numéro de téléphone :</label>
+    <input id="customerPhone" name="customerPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" type="tel" />
+    <label for="customerNote">
+    Votre commentaire : 
+    <em>&#x2a;</em>
+    </label>
+    <textarea id="customerNote" name="customerNote" required="" rows="4">
+    </textarea>
+    <button id="customerOrder">SUBMIT
+    </button>
+</form>
+
 <div class="reponse"></div>
 `
 

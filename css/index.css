@@ -177,9 +177,7 @@ body{
     left: 250px;
     background-color: var(--panel-color);
     transition: var(--tran-05);
-    /* height: 250vh; */
     width: calc(100% - 250px);
-    /* padding: 10px 15px; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -346,7 +344,7 @@ body.dark .switch:before{
 /*------------------------------------- Articles-Informatiques ---------------------------------------------------------------------*/
 .articles-informatique{
     position: relative;
-    width: calc(100% - 250px);
+    width: calc(100%);
     background-color: var(--panel-color);
     transition: var(--tran-05);
     margin: 0 auto;
@@ -384,7 +382,8 @@ body.dark .switch:before{
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 20px;
-    width: calc(100% + 20px);
+    width: calc(100% - 250px);
+    margin: 0 auto;
 }
 .grid__item {
     background-color: var(--panel-color);
@@ -449,7 +448,7 @@ body.dark .switch:before{
 /*------------------------------------- Articles-téléphonie ---------------------------------------------------------------------*/
 .articles-téléphonie{
     position: relative;
-    width: calc(100% - 250px);
+    width: calc(100%);
     background-color: var(--panel-color);
     transition: var(--tran-05);
     margin: 0 auto;
@@ -490,70 +489,9 @@ body.dark .switch:before{
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 20px;
-    width: calc(100% + 20px);
+    width: calc(100% - 250px);
+    margin: 0 auto;
 }
-
-.grid__item {
-    background-color: #fff;
-    border-radius: 0.4rem;
-    overflow: hidden;
-    box-shadow: 0 3rem 6rem rgba(0, 0, 0, .1);
-    cursor: pointer;
-    transition: var(--tran-03);
-    width: 20rem;
-    margin-bottom: 1rem;
-}
-.grid__item:hover {
-    transform: translateY(-0.5%);
-    box-shadow: 0 4rem 8rem rgba(0, 0, 0, .2);
-}
-.card__img {
-    display: block;
-    width: 100%;
-    height: 15rem;
-    object-fit: cover;
-}
-.card__content {
-    padding: 1rem 1rem;
-}
-.card__header {
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: #0d0d0d;
-    margin-bottom: 1rem;
-}
-.card__text {
-    font-size: 1.1rem;
-    letter-spacing: 0.1rem;
-    line-height: 1;
-    text-align: justify;
-    color: #3d3d3d;
-    margin-bottom: 1rem;
-}
-.card__btn {
-    display: block;
-    width: 100%;
-    padding: 1rem;
-    font-size: 1.1rem;
-    text-align: center;
-    color: #3363ff;
-    background-color: #e6ecff;
-    border: none;
-    border-radius: 0.4rem;
-    transition: var(--tran-03);
-    cursor: pointer;
-}
-.card__btn span {
-    margin-left: 0.8rem;
-    transition: var(--tran-03);
-}
-.card__btn:hover, .card__btn:active {
-    background-color: #dce4ff;
-}
-.card__btn:hover span, .card__btn:active span {
-    margin-left: 0.8rem;
-}
-
 /*------------------------------------- Pub ---------------------------------------------------------------------*/
 .dashboard .pub{
     background: url("/assets/asus4.jpg") no-repeat;
@@ -753,26 +691,13 @@ footer .mensions-légals a{
     .container1 .propo, .container1 .coucou{
         display: none;
     }
-    .articles-informatique .boxes, .articles-télépkonie .boxes1{
+    .articles-informatique .boxes, .articles-téléphonie .boxes1{
         display: flex;
         flex-wrap: wrap;
         justify-content:space-around;
     }
 }
 
-@media (max-width : 500px) {
-    .articles-informatique .boxes{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .articles-informatique .boxes .box{
-        width: calc(70%);
-        margin-bottom: 20px;
-
-    }
-}
 .point-relais{
     display: flex;
     align-items: center;

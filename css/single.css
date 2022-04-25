@@ -450,24 +450,10 @@ footer .mensions-légals a{
     .container1 .propo, .container1 .coucou{
         display: none;
     }
-    .articles-informatique .boxes, .articles-télépkonie .boxes1{
+    .articles-informatique .boxes, .articles-téléphonie .boxes1{
         display: flex;
         flex-wrap: wrap;
         justify-content:space-around;
-    }
-}
-
-@media (max-width : 500px) {
-    .articles-informatique .boxes{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .articles-informatique .boxes .box{
-        width: calc(70%);
-        margin-bottom: 20px;
-
     }
 }
 .dashboard .single .parent{
