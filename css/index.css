@@ -244,9 +244,10 @@ body{
 display: flex;
 justify-content: flex-start;
 align-items: center;
+width: 50%;
 }
 .dashboard input{
-    width: 30rem;
+    width: 100%;
     height: 40px;
     padding-left: 20px;
     background-color: var(--panel-color);
@@ -266,50 +267,153 @@ align-items: center;
     transition: var(--tran-05);
 }
 .parent{
-    background: url("/assets/asus3.jpg") no-repeat;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    height: 65vh;
+    width: calc(112% - 250px);
+}
+.parent video{
     object-fit: fill;
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     position: relative;
     width: calc(112% - 250px);
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    height: 55vh;
+    height: 60vh;
     border-radius: 2px;
     margin: 0 auto;
     margin: 20px 20px;
 }
 .parent .contex{
     padding: 20px;
-    color: white;
-    height: 35vh;
+    height: 60vh;
+    width: 30rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    border-left: solid 1px white;
-    width: 30rem;
-}
-.parent .contex button{
-    background-color: white;
-    border: solid 1px white;
-    width: 80%;
-    margin: 20px 0px;
-    font-size: 20px;
-    font-weight: 500;
-    color: black;
-    box-shadow: 2px 2px white;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-left: solid 1px var(--text-color);
+    transition: var(--tran-05);
+    margin: 0 auto;
 }
 .parent .contex .titre{
+    font-size: 24px !important;
+    text-align: justify;
+}
+.parent .contex .text{
+    font-size: 20px !important;
+    text-align: justify;
+}
+/*-----------------------------------button-----------------------------------*/
+.animation {
+    width: 60%;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #FF4301;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+}
+.animation:hover {
+    background: #FF4301;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #FF4301,
+                0 0 25px #FF4301,
+                0 0 50px #FF4301,
+                0 0 100px #FF4301;
+}
+.animation span {
+    position: absolute;
+    display: block;
+}
+.animation span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #FF4301);
+    animation: btn-anim1 1s linear infinite;
+}
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+    50%,100% {
+        left: 100%;
+    }
+}
+.animation span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #FF4301);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+}
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+    50%,100% {
+        top: 100%;
+    }
+}
+.animation span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #FF4301);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+}
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+    50%,100% {
+        right: 100%;
+    }
+}
+
+.animation span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #FF4301);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s;
+    text-align: center !important;
+}
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+    50%,100% {
+        bottom: 100%;
+    }
+}
+/*--------------------------------------------------------------------------------*/
+.parent .contex .titre{
     font-size: 30px;
+    color: var(--text-color);
+    transition: var(--tran-05);
 }
 .parent .contex .text{
     font-size: 20px;
+    color: var(--text-color);
+    transition: var(--tran-05);
 }
 .menu-items li a:hover i,
 .menu-items li a:hover .link-name
@@ -386,14 +490,13 @@ body.dark .switch:before{
     margin: 0 auto;
 }
 .grid__item {
-    background-color: var(--panel-color);
+    background-color: #fff;
     border-radius: 0.4rem;
     overflow: hidden;
     box-shadow: 0 3rem 6rem rgba(0, 0, 0, .1);
     cursor: pointer;
     width: 20rem;
     margin-bottom: 1rem;
-    transition: var(--tran-05);
 }
 .grid__item:hover {
     transform: translateY(-0.5%);
@@ -500,7 +603,7 @@ body.dark .switch:before{
     background-position: center;
     position: relative;
     width: calc(112% - 250px);
-    height: 55vh;
+    height: 60vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -511,7 +614,7 @@ body.dark .switch:before{
 .dashboard .pub .contex{
     padding: 20px;
     color: white;
-    height: 40vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -519,22 +622,12 @@ body.dark .switch:before{
     width: 25rem;
 }
 .dashboard .pub .contex .titre{
-    font-size: 30px;
+    font-size: 24px !important;
+    text-align: justify !important;
 }
 .dashboard .pub .contex .text{
     font-size: 20px;
-    text-align: justify;
-}
-.dashboard .pub .contex button{
-    background-color: white;
-    border: solid 1px white;
-    width: 80%;
-    margin: 20px 0px;
-    font-size: 20px;
-    font-weight: 500;
-    color: black;
-    box-shadow: 2px 2px white;
-    cursor: pointer;
+    text-align: justify !important;
 }
 /*------------------------------------- Footer ---------------------------------------------------------------------*/
 footer{
@@ -704,7 +797,7 @@ footer .mensions-légals a{
     justify-content: center;
     background-color:var(--card-color);
     transition: var(--tran-05);
-    width: calc(100%);
+    width: 100%;
     height: 85vh;
     border-top: solid 1px var(--border-color);
 }
@@ -716,7 +809,7 @@ footer .mensions-légals a{
     align-items: center;
     padding-top: 5vh;
     padding-bottom: 5vh;
-    width: 100%;
+    width: calc(100% - 250px);
 }
 .point-relais .pr-parent .srch button i{
     color: var(--text-color);
@@ -732,6 +825,8 @@ footer .mensions-légals a{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    width: 100%;
+    margin: 0 auto;
 }
 .point-relais .pr-parent .srch input{
     width: 20rem;
@@ -739,7 +834,7 @@ footer .mensions-légals a{
     background-color: var(--panel-color);
     transition: var(--tran-05);
     border: solid 1px var(--border-color);
-    width: 950px;
+    width: 100%;
 }
 .point-relais .pr-parent .srch input::placeholder {
     color: var(--text-color);
@@ -752,7 +847,7 @@ footer .mensions-légals a{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1000px;
+    width: 100%;
     height: 3rem;
     color: var(--text-color);
     transition: var(--tran-05);
@@ -765,18 +860,17 @@ footer .mensions-légals a{
     justify-content: center;
     align-items: center;
     font-size: 14px;
-    width: 1000px;
+    width: 100%;
     color: var(--text-color);
     transition: var(--tran-05);
 }
 .point-relais .pr-parent .search{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    text-align: justify !important;
     font-size: 14px;
-    position: relative;
-    right: 405px;
     color: var(--text-color);
     transition: var(--tran-05);
-    
+    width: 100%;
+}
+.point-relais .pr-parent iframe{
+    width: 100% !important;
 }

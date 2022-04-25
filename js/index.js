@@ -104,3 +104,6 @@ const htmlFooter = `
 `
 document.querySelector(".mensions-légals").innerHTML=htmlFooter;
 
+window.onload = function (){
+    document.querySelector("video").play().then();
+}

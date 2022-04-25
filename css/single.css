@@ -244,8 +244,10 @@ body{
 display: flex;
 justify-content: flex-start;
 align-items: center;
+width: 50%;
 }
 .dashboard input{
+    width: 100%;
     width: 30rem;
     height: 40px;
     padding-left: 20px;

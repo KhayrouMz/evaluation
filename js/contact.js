@@ -37,6 +37,8 @@ let html ='';
 html += `
 
 <form class="contact-us" action="#">
+    <h2 class="text"> Nous contacter</h2>
+    <span class="text">Vous avez des questions, veuillez utiliser le formulaire suivant :</Span>
     <label for="customerName">
     Votre nom :
     <em>&#x2a;</em>
