@@ -460,6 +460,7 @@ body.dark .switch:before{
     justify-content: center;
     align-items: center;
     height: 5rem;
+    margin-bottom: 20px !important;
 }
 .articles-informatique .titre .text{
     font-size: 24px;
@@ -524,6 +525,8 @@ body.dark .switch:before{
     text-align: justify;
     color: #3d3d3d;
     margin-bottom: 1rem;
+    overflow:hidden;
+    height: 10rem;
 }
 .card__btn {
     display: block;
@@ -558,12 +561,14 @@ body.dark .switch:before{
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    
 }
 .articles-téléphonie .titre{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 5rem;
+    margin-bottom: 20px !important;
 }
 .articles-téléphonie .titre .text{
     font-size: 24px;

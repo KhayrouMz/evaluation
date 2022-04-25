@@ -36,7 +36,7 @@ fetch("./assets/bd1.json")
 
     const accueil = {
         
-        articles : articles.slice(0,6)
+        articles : articles.slice(0,4)
     }
 
     let html ='';
@@ -68,7 +68,7 @@ fetch("./assets/bd2.json")
 
     const accueil1 = {
         
-        articles1 : articles1.slice(0,6)
+        articles1 : articles1.slice(0,4)
     }
 
 let html1 ='';

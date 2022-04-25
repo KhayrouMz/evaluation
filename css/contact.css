@@ -29,7 +29,7 @@
 }
 body{
     background-color: var(--panel-color);
-    /* height: 313vh; */
+    transition: var(--tran-05);
 
 }
 .container{
@@ -317,11 +317,15 @@ label, input, textarea {
 .contact .contact-us h2{
     font-size: 30px !important;
     font-weight: 400;
+    color: var(--text-color);
+    transition: var(--tran-05);
 }
 .contact .contact-us .text{
     font-size: 16px;
     margin-top: 10px !important;
     margin-bottom: 10px !important;
+    color: var(--text-color);
+    transition: var(--tran-05);
 }
 textarea{
     height: 25vh;
