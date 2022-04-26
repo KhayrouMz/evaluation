@@ -269,8 +269,10 @@ width: 50%;
 .parent{
     margin-top: 10px;
     display: flex;
-    justify-content: flex-start;
-    height: 65vh;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: flex-start; */
+    height: 80vh;
     width: calc(112% - 250px);
 }
 .parent video{
@@ -278,24 +280,23 @@ width: 50%;
     background-size: cover;
     background-position: center;
     position: relative;
-    width: calc(112% - 250px);
+    width: calc(100%);
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    height: 60vh;
+    height: 50vh;
     border-radius: 2px;
     margin: 0 auto;
     margin: 20px 20px;
 }
 .parent .contex{
     padding: 20px;
-    height: 60vh;
-    width: 30rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    border-left: solid 1px var(--text-color);
+    /* border-left: solid 1px var(--text-color); */
     transition: var(--tran-05);
     margin: 0 auto;
 }
@@ -306,6 +307,12 @@ width: 50%;
 .parent .contex .text{
     font-size: 20px !important;
     text-align: justify;
+}
+.parent .animation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
 }
 /*-----------------------------------button-----------------------------------*/
 .animation {
@@ -602,13 +609,13 @@ body.dark .switch:before{
 }
 /*------------------------------------- Pub ---------------------------------------------------------------------*/
 .dashboard .pub{
-    background: url("/assets/asus4.jpg") no-repeat;
+    background: url("/assets/Untitled-2.png") no-repeat;
     background-size: cover;
     object-fit: fill;
     background-position: center;
     position: relative;
     width: calc(112% - 250px);
-    height: 60vh;
+    height: 50vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -619,7 +626,7 @@ body.dark .switch:before{
 .dashboard .pub .contex{
     padding: 20px;
     color: white;
-    height: 50vh;
+    height: 45vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
