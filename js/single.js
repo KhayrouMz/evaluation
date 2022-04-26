@@ -32,27 +32,6 @@ if (sideBar.classList.contains("close")){
 
 
 
-
-fetch("./assets/bd1.json")
-.then(reponse =>reponse.json())
-.then(function (articles){
-    const [ , id] = location.search.split("=")
-
-    const article = articles.find(function (a) {return a.id == id});
-
-    const htmlSingle = `
-    <div class="titre"><h2>${article.titre}</h2></div>
-    <div class="contenu-prix">
-        <span class="prix">${article.prix}</span>
-        <p class="text">${article.contenu}</p>
-    </div>
-    <button type="button">Ajouter l'article au panier</button>
-    `
-
-    document.querySelectorAll(".single").innerHTML = htmlSingle;
-})
-
-
 fetch("./assets/bd2.json")
 .then(reponse =>reponse.json())
 .then(function (articles1){
@@ -73,6 +52,27 @@ fetch("./assets/bd2.json")
     `
     document.querySelector(".single").innerHTML = htmlSingle1;
 });
+
+fetch("./assets/bd1.json")
+.then(reponse =>reponse.json())
+.then(function (articles){
+    const [ , id] = location.search.split("=")
+
+    const article = articles.find(function (a) {return a.id == id});
+
+    const htmlSingle = `
+    <div class="titre"><h2>${article.titre}</h2></div>
+    <div class="contenu-prix">
+        <span class="prix">${article.prix}</span>
+        <p class="text">${article.contenu}</p>
+    </div>
+    <button type="button">Ajouter l'article au panier</button>
+    `
+
+    document.querySelectorAll(".single").innerHTML = htmlSingle;
+});
+
+
 const htmlFooter = `
 <div>
     <p class="text">

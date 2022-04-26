@@ -4,12 +4,14 @@ const body = document.querySelector("body");
         sideBarToggel = body.querySelector(".sidebar-toggel");
 
     
-    // let getMode = localStorage.setItem("mode");
+    let getMode = localStorage.setItem("mode", "dark");
 
-    // if ( getMode && getMode === "dark") {
+    if ( getMode === ("mode ","dark")) {
 
-    //     body.classList.toggle("dark");
-    // }
+        body.classList.toggle("dark");
+    } else {
+        body.classList.toggle("light");
+    }
 
     modeToggle.onclick = function () {
         body.classList.toggle("dark");
@@ -104,6 +106,19 @@ const htmlFooter = `
 `
 document.querySelector(".mensions-légals").innerHTML=htmlFooter;
 
-window.onload = function (){
-    document.querySelector("video").play().then();
-}
+
+window.addEventListener("load", function (){
+
+
+    document.querySelector("video").onplay = function (){
+        document.querySelector("video").play().then();
+    };
+});
+
+// window.addEventListener("load", function (){
+
+
+//     document.querySelector("video").onplay = function (){
+//         document.querySelector("video").play().then();
+//     };
+// });
