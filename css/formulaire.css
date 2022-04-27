@@ -442,6 +442,23 @@ footer{
     justify-content: flex-start;
     align-items: center;
 }
+.container1 .propo ul li, .container1 .coucou ul li{
+    background-image:
+    linear-gradient(90deg, white, black)
+    ;
+    background-size:0% 1px ;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size 300ms ease ;
+    text-decoration: none;
+}
+.container1 .propo ul li:hover{
+    background-size:80% 1px ;
+}
+.container1 .coucou ul li:hover{
+    background-size:80% 1px ;
+}
+
 .container1 .propo .text, .container1 .coucou .text{
     color: white;
     font-size: 16px;

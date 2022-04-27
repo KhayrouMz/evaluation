@@ -664,8 +664,24 @@ footer{
 }
 .container1 .propo ul, .container1 .coucou ul{
     list-style: none;
-
 }
+.container1 .propo ul li, .container1 .coucou ul li{
+    background-image:
+    linear-gradient(90deg, white, black)
+    ;
+    background-size:0% 1px ;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size 300ms ease ;
+    text-decoration: none;
+}
+.container1 .propo ul li:hover{
+    background-size:80% 1px ;
+}
+.container1 .coucou ul li:hover{
+    background-size:80% 1px ;
+}
+
 .container1 .propo ul li a, .container1 .coucou ul li a{
     text-decoration: none;
     color: rgb(201, 201, 201);

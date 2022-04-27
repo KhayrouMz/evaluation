@@ -335,6 +335,23 @@ footer{
     justify-content: flex-start;
     align-items: center;
 }
+.container1 .propo ul li, .container1 .coucou ul li{
+    background-image:
+    linear-gradient(90deg, white, black)
+    ;
+    background-size:0% 1px ;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size 300ms ease ;
+    text-decoration: none;
+}
+.container1 .propo ul li:hover{
+    background-size:80% 1px ;
+}
+.container1 .coucou ul li:hover{
+    background-size:80% 1px ;
+}
+
 .container1 .propo .text, .container1 .coucou .text{
     color: white;
     font-size: 16px;
@@ -528,5 +545,76 @@ footer .mensions-légals a{
     background-color: #dce4ff;
 }
 .single button:hover span, .single button:active span {
+    margin-left: 0.8rem;
+}
+
+.articles-informatique .boxes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: calc(100% - 250px);
+    margin: 0 auto;
+}
+.grid__item {
+    background-color: #fff;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, .1);
+    cursor: pointer;
+    width: 20rem;
+    margin-bottom: 1rem;
+}
+.grid__item:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, .2);
+}
+.card__img {
+    display: block;
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+}
+.card__content {
+    padding: 1rem 1rem;
+}
+.card__header {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #0d0d0d;
+    margin-bottom: 1rem;
+}
+.card__text {
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    line-height: 1;
+    text-align: justify;
+    color: #3d3d3d;
+    margin-bottom: 1rem;
+    overflow:hidden;
+    height: 10rem;
+}
+.card__btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #3363ff;
+    background-color: #e6ecff;
+    border: none;
+    border-radius: 0.4rem;
+    transition: var(--tran-03);
+    cursor: pointer;
+}
+.card__btn span {
+    margin-left: 0.8rem;
+    transition: var(--tran-03);
+}
+.card__btn:hover, .card__btn:active {
+    background-color: #dce4ff;
+}
+.card__btn:hover span, .card__btn:active span {
     margin-left: 0.8rem;
 }
