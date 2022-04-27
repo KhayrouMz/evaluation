@@ -37,6 +37,10 @@ html, body {
     justify-content: center;
     background-color: var(--panel-color);
     width: 100%;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    height: 100vh;
 }
 
 form {
@@ -457,93 +461,6 @@ footer{
     color: white;
     display: flex;
     flex-direction: column;
-    margin-top: 5vh;
-}
-.container1{
-    background-color: var(--panel-color);
-    transition: var(--tran-05);
-    height: 40vh;
-    padding: 10px 15px;
-    border-bottom: solid 1px black;
-    background-color: #0e0e0e;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-}
-.container1 .propo ul, .container1 .coucou ul{
-    list-style: none;
-
-}
-.container1 .propo ul li a, .container1 .coucou ul li a{
-    text-decoration: none;
-    color: rgb(201, 201, 201);
-    font-size: 14px;
-}
-.container1 .propo ul li, .container1 .coucou ul li{
-    height: 5vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.container1 .propo ul li, .container1 .coucou ul li{
-    background-image:
-    linear-gradient(90deg, white, black)
-    ;
-    background-size:0% 1px ;
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    transition: background-size 300ms ease ;
-    text-decoration: none;
-}
-.container1 .propo ul li:hover{
-    background-size:80% 1px ;
-}
-.container1 .coucou ul li:hover{
-    background-size:80% 1px ;
-}
-
-.container1 .propo .text, .container1 .coucou .text{
-    color: white;
-    font-size: 16px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 6vh;
-    border-bottom: solid white 1px;
-}
-.container1 .newsletter .text{
-    color: white;
-}
-.container1 .newsletter{
-    margin-top: 1.5vh;
-}
-.container1 .newsletter .newsl{
-    background-color: white;
-    border: solid 1px white;
-    width: 100%;
-    margin: 20px 0px;
-    font-size: 16px;
-    height: 5vh;
-    box-shadow: 2px 2px white;
-    border: solid 1 px white;
-    cursor: pointer;
-}
-.container1 .newsletter .icons{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 10vh;
-    font-size: 40px;
-    border-top: solid 1px white;
-}
-.container1 .newsletter .icons a{
-    color: white;
-    text-decoration: none;
-}
-.container.close ~ footer{
-    left: 55px;
-    width: calc(100% - 55px);
 }
 footer .mensions-légals{
     display: flex;

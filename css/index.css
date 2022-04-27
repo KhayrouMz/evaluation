@@ -288,7 +288,8 @@ width: 50%;
     margin: 20px 20px;
 }
 .parent .contex{
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -297,14 +298,17 @@ width: 50%;
     /* border-left: solid 1px var(--text-color); */
     transition: var(--tran-05);
     margin: 0 auto;
+    /* background-color: #000; */
 }
 .parent .contex .titre{
     font-size: 30px !important;
     text-align: justify;
+    color:  var(--text-color);
 }
 .parent .contex .text{
     font-size: 20px !important;
     text-align: justify;
+    color:  var(--text-color);
 }
 .parent .animation{
     display: flex;

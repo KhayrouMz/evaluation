@@ -4,14 +4,14 @@ const body = document.querySelector("body");
         sideBarToggel = body.querySelector(".sidebar-toggel");
 
     
-    let getMode = localStorage.setItem("mode", "dark");
+    // const getMode = localStorage.setItem("mode");
 
-    if ( getMode === ("mode ","dark")) {
+    // if ( getMode && getMode === "dark") {
 
-        body.classList.toggle("dark");
-    } else {
-        body.classList.toggle("light");
-    }
+    //     body.classList.toggle("dark");
+    // } else {
+    //     body.classList.toggle("light");
+    // }
 
     modeToggle.onclick = function () {
         body.classList.toggle("dark");
@@ -31,6 +31,9 @@ const body = document.querySelector("body");
         }
 }
 
+// window.onload = function (){
+//     if ()
+// }
 
 fetch("./assets/bd1.json")
 .then(reponse => reponse.json ())
