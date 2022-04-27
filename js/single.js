@@ -1,8 +1,8 @@
 
 const body = document.querySelector("body");
-modeToggle = body.querySelector(".mode-toggle");
-sideBar = body.querySelector("nav");
-sideBarToggel = body.querySelector(".sidebar-toggel");
+            modeToggle = body.querySelector(".mode-toggle");
+            sideBar = body.querySelector("nav");
+            sideBarToggel = body.querySelector(".sidebar-toggel");
 
 
 // let getMode = localStorage.setItem("mode");
@@ -62,14 +62,17 @@ fetch("./assets/bd1.json")
 
     const htmlSingle = `
     <div class="titre"><h2>${article.titre}</h2></div>
-    <div class="contenu-prix">
-        <span class="prix">${article.prix}</span>
-        <p class="text">${article.contenu}</p>
-    </div>
-    <button type="button">Ajouter l'article au panier</button>
+        <div class="parent">
+            <img src="${article.photo}" alt="" loading="lazy">
+            <div class="contenu-prix">
+                <span class="prix">${article.prix}</span>
+                <p class="text">${article.contenu}</p>
+            </div>
+        </div>
+        <button type="button">Ajouter l'article au panier</button>
     `
 
-    document.querySelectorAll(".single").innerHTML = htmlSingle;
+    document.querySelector(".single").innerHTML = htmlSingle;
 });
 
 
